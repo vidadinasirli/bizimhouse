@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="js" lang="az">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="cdn/shop/t/1/assets/base.css">
+    <link rel="stylesheet" href="cdn/shop/t/1/assets/component-card.css">
+    <link rel="stylesheet" href="cdn/shop/t/1/assets/component-price.css">
+    
+    <style>
+        /* Kartların yan yana düzgün durması için ekstra koruma */
+        .grid { display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+        .grid__item { padding: 10px; box-sizing: border-box; }
+        @media screen and (min-width: 990px) { .grid--4-col-desktop .grid__item { width: 25%; } }
+        @media screen and (max-width: 989px) { .grid--2-col-tablet-down .grid__item { width: 50%; } }
+        .card__media img { max-width: 100%; height: auto; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+<div class="page-width" style="padding-top: 50px; padding-bottom: 50px;">
+  <div class="section-header text-center" style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+    <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">DAHA ÖNCE BAKTIKLARINIZ</h2>
+  </div>
+
+  <ul class="grid product-grid grid--4-col-desktop grid--2-col-tablet-down">
+    
+    <li class="grid__item">
+      <div class="card-wrapper product-card-wrapper underline-links-hover" style="border: 1px solid #f3f3f3; border-radius: 8px; overflow: hidden; background: #fff;">
+        <div class="card card--standard card--media">
+          <div class="card__inner" style="position: relative; background: #f8f8f8;">
+            <div class="card__media">
+                <img src="cdn/shop/files/16in1chopper.png" alt="Chopper">
+            </div>
+          </div>
+          <div class="card__content" style="padding: 15px;">
+            <div class="card__information">
+              <h3 class="card__heading h5" style="font-size: 14px; margin: 0 0 10px 0;">
+                <a href="#" class="full-unstyled-link" style="text-decoration: none; color: #333;">16 in 1 Chopper - Mətbəx Doğrayıcısı</a>
+              </h3>
+              <div class="price" style="font-weight: bold; color: #1f6bff; font-size: 18px;">
+                24.90 AZN
+              </div>
+            </div>
+            <div class="quick-add" style="margin-top: 15px;">
+              <button class="button button--full-width button--secondary" style="background: #1f6bff; color: white; border: none; padding: 10px; width: 100%; border-radius: 4px; cursor: pointer;">
+                Səbətə at
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+</body>
+</html>
